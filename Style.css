@@ -1,0 +1,50 @@
+#register-body{
+    background: linear-gradient(135deg, #0023C4 0%, #FF5CF4 100%);
+    font-family: 'Poppins', sans-serif;
+}
+#main-div{
+     background: white;
+    width: 60%;
+    height: 850px;
+    margin: 100px auto ;
+    border-radius: 20px;
+    padding: 30px 30px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25); 
+}
+h2{
+    color: #0023C4;
+}
+img{
+    margin: 30px;
+}
+label{
+    color: #0023C4;
+    display: block;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.register-field {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #CEE1F2;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+.register-field:focus {
+  border-color: #FF5CF4;
+  box-shadow: 0 0 6px #FF5CF4;
+}
+#create {
+  font-size: 16px;
+  padding: 12px 25px;
+  background-color: #0023C4;
+  color: white;
+  border: none; 
+  border-radius: 10px;
+}
+.login-link:hover {
+  color: #FF5CF4;
+}
