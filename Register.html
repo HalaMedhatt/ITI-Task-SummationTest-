@@ -9,35 +9,39 @@
     <div id="main-div">
         <img src="summationLogo.png" width="100px" height="100px" alt="Summation Logo">
         <h2>Create New Account</h2>
-        <form class="register-form">
+        <form class="register-form" action="home.html">
             <label>
                 First Name<br>
-                <input class="register-field" type="text" placeholder="Enter your first name">
+                <input class="register-field" type="text" name ="firstName" oninput="nameVaildation(0)" placeholder="Enter your first name">
             </label>
-    
+            <div class="erorr-msg"></div>
             <label>
                 Last Name<br>
-                <input class="register-field" type="text" placeholder="Enter your last name">
+                <input class="register-field" type="text" name="lastName" oninput="nameVaildation(1)" placeholder="Enter your last name">
             </label>
+            <div class="erorr-msg"></div>
             <label>
                 Email Address<br>
-                <input class="register-field" type="email" placeholder="example@email.com">
+                <input class="register-field" type="email" name="email"oninput="emailValidation(2)" placeholder="example@email.com">
             </label>
+            <div class="erorr-msg"></div>
             <label>
                 Password<br>
-                <input class="register-field" type="password" placeholder="Enter your password">
+                <input class="register-field" type="password" name="password" oninput="passValidation(3)" placeholder="Enter your password">
             </label>
+            <div class="erorr-msg"></div>
             <label>
                 Confirm Password<br>
-                <input class="register-field" type="password" placeholder="Re-enter password">
+                <input class="register-field" type="password" name="ConfirmPassword" oninput="ConfirmPass(4)" placeholder="Re-enter password">
             </label>
-            <br><br><br>
+            <div class="erorr-msg"></div>
+            <br><br>
             <input id="create" type="submit" value="Create" >
         </form>
         <br>
         <a class="login-link" href="Login.html">Already have an account? Login</a>
 
-        
+        <script src="Register.js"></script>
     </div>
 </body>
 </html>

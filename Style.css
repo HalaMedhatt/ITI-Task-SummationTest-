@@ -23,7 +23,7 @@ label{
     display: block;
     font-weight: 500;
     text-align: left;
-    margin-bottom: 30px;
+    
 }
 .register-field {
   width: 90%;
@@ -73,4 +73,12 @@ label{
 #login-btn:hover {
     background-color: #FF5CF4;
     cursor: pointer;
+}
+.erorr-msg{
+  font-size: x-small;
+  text-align: left;
+  color: red;
+  margin-bottom:30px ;
+  margin-top: 5px;
+  
 }
