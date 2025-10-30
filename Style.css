@@ -52,7 +52,7 @@ label{
 #login-div {
     background: white;
     width: 40%;
-    height: 550px;
+    height: 630px;
     margin: 120px auto;
     border-radius: 20px;
     padding: 30px;
@@ -77,6 +77,13 @@ label{
 .erorr-msg{
   font-size: x-small;
   text-align: left;
+  color: red;
+  margin-bottom:30px ;
+  margin-top: 5px;
+  
+}
+#erorr-msg{
+  font-size: small;
   color: red;
   margin-bottom:30px ;
   margin-top: 5px;
