@@ -1,0 +1,112 @@
+body{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0023C4 0%, #FF5CF4 100%);
+    background-repeat: no-repeat;
+}
+#timer-bar{
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 7px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+}
+#timer-fill {
+      height: 100%;
+      width: 0%;
+      background-color: #0023C4;
+      border-radius: 7px;
+      transition: width 1s linear;
+      
+}
+
+#question{
+    height: 40px;
+    width: 70%;
+    font-size: 22px;
+    font-weight: 600;
+    border: 2px solid #0023C4;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+      color: #0023C4;
+}
+#question-div {
+    width: 65%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25); 
+    display: inline-block;
+    vertical-align: top;
+    transition: 0.3s;
+}
+#marked-question{
+    width: 15%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25); 
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    max-height: 400px;
+}
+.answers{
+    background-color: #CEE1F2;
+    margin: 10px auto;
+    padding: 8px 12px;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #0023C4;
+}
+.answers:hover {
+      background-color: #0023C4;
+      color: white;
+}
+#questuin-number{
+    display: inline-block;
+    margin: 10px;
+    height: 20px;
+    padding: 10px 10px 5px 10px;
+    background-color: #CEE1F2;
+    color: #0023C4;
+    border-radius: 7px;
+}
+button {
+    width: 45%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#Submet-button {
+    background: #0023C4;
+    color: white;
+}
+
+#Submet-button:hover {
+    background: #001c99;
+}
+
+#mark-button {
+    background: #FF5CF4;
+    color: white;
+}
+#mark-button:hover {
+    background: #e43bdb;
+}
+#control{
+    margin: 30px;
+}
