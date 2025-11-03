@@ -56,9 +56,9 @@ function ConfirmPass(index){
         vaild[index]=true;
     }
 }
-
-var form=document.getElementsByClassName('register-form')[0];
-form.addEventListener('submit',function(e){
+var registerUser =-1;
+var form1=document.getElementsByClassName('register-form')[0];
+form1.addEventListener('submit',function(e){
     var store=true;
     for(i=0;i<5;i++){
         if(vaild[i]==false){
@@ -71,11 +71,20 @@ form.addEventListener('submit',function(e){
     if(store){
 
         var newUser = {
-        name: form.firstName.value,
-        email: form.email.value,
-        password: form.password.value
-        };
-        users.push(newUser);
+        firstName: form1.firstName.value,
+        email: form1.email.value,
+        password: form1.password.value,
+        maxScore : 0
+        
+    };
+    users.push(newUser);
+        if(localStorage.length==1){
+            localStorage.setItem("current",users.length-1)
+        }
+        else{
+            localStorage["current"]= users.length-1;
+        }
+            
         localStorage.setItem('users', JSON.stringify(users));
 
 

@@ -4,6 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0023C4 0%, #FF5CF4 100%);
     background-repeat: no-repeat;
+    height: 1000px;
 }
 #timer-bar{
     height: 8px;
