@@ -54,6 +54,17 @@ body{
     vertical-align: top;
     margin-left: 20px;
     max-height: 400px;
+    text-align: center;
+}
+#marked-question div{
+    color: black;
+    font-size: 22px;
+    background-color: #CEE1F2;
+    border-radius: 10px;
+    text-align: center;
+    height: 35px;
+    margin: 5px auto;
+    padding-top: 5px;
 }
 .answers{
     background-color: #CEE1F2;

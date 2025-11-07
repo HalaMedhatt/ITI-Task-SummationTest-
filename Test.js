@@ -131,3 +131,29 @@ function updateTimer() {
 }
 
 const timerInterval = setInterval(updateTimer, 100);
+
+
+
+
+
+// Marked 
+var marks = document.getElementById("marked-question");
+var markBtn = document.getElementById("mark-button");
+var markedDivs = new Array(10);
+markBtn.addEventListener('click',function(){
+    var index =parseInt(localStorage.getItem('currentIndex')) ;
+    if(test[index].isChecked == true){
+        test[index].isChecked = false;
+        marks.removeChild(markedDivs[index]);
+
+        
+    }else{
+        test[index].isChecked=true;
+        markedDivs[index] = document.createElement("div");
+        markedDivs[index].textContent = "Q" +(1+index);
+        marks.append(markedDivs[index]);
+        
+    }
+    
+     
+});
